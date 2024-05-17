@@ -1,0 +1,25 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {},
+    "functions": [],
+    "variables": {},
+    "resources": [
+        {
+            "name": "demostorage",
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2023-04-01",
+            "location": "[resourceGroup().location]",
+            "kind": "StorageV2",
+            "tags": {
+                "ProjectType": "aoai-your-data-service"
+            },
+            "sku": {
+                "name": "Standard_LRS",
+                "tier": "Standard"
+            }
+            
+        }
+    ],
+    "outputs": {}
+}
