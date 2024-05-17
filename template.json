@@ -6,9 +6,9 @@
     "variables": {},
     "resources": [
         {
-            "name": "demostorage",
             "type": "Microsoft.Storage/storageAccounts",
-            "apiVersion": "2023-04-01",
+            "apiVersion": "2023-01-01",
+            "name": "demostorage123",
             "location": "[resourceGroup().location]",
             "kind": "StorageV2",
             "tags": {
